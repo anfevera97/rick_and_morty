@@ -41,4 +41,5 @@
 	-webkit-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
     cursor: pointer;
+	margin-right: 3%;
 }

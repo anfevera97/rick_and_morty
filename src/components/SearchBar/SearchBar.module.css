@@ -1,0 +1,44 @@
+.cajaDeBusqueda {
+	padding-top: 285px;
+	padding-right: 10%;
+}
+
+.input {
+	margin-right: 3%;
+	width: 180px;
+	height: 30px;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+}
+
+.boton {
+	background-color: rgb(51, 145, 162);
+	width: 100px;
+	height: 30px;
+	color: black;
+	border: none;
+	font-size: 20px;
+	-webkit-text-stroke: 0.4px rgb(51, 145, 162);
+	border-radius: 0.2rem;
+    box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+.random{
+	background-color: rgb(51, 145, 162);
+	width: 100px;
+	height: 30px;
+	color: black;
+	border: none;
+	font-size: 20px;
+	-webkit-text-stroke: 0.4px rgb(51, 145, 162);
+	border-radius: 0.2rem;
+    box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -2px 2px 35px 12px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}

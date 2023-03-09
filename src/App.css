@@ -5,33 +5,19 @@ body{
 }
 
 .App {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	text-shadow: 8px 8px 10px #0000008c;
-}
-.navbar {
-	position: fixed;
-	top:0;
-	background-image: url("C:\Users\RYZEN\Desktop\rick_and_morty\src\img\img_cabecera\Rick_and_Morty.svg.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50%;
-	box-sizing: border-box;
-	border:none;
-	border-radius: 0.4rem;
+	max-width: 500px;
+	width: 90%;
+	margin: 40px auto;
 }
 
+
 .container{
-	margin-top: 350px;
-	display: grid;
-	grid-template-columns: 1fr;
+	margin-top: 50px;
 }
 
 @font-face {
 	font-family: "pickeRick";
 	src: url("C:\Users\RYZEN\Desktop\rick_and_morty\src\fonts\get_schwifty.ttf");
 }
+
 

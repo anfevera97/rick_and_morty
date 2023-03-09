@@ -22,8 +22,9 @@ export default function SearchBar(props) {
 	}
 
 	return (
+		<xz>
 		<div className={style.cajaDeBusqueda}>
-			<button className={style.random} onClick={()=>handdleButtonClick()}>¿?</button>
+			
 			<input
 				className={style.input}
 				type="text"
@@ -34,7 +35,9 @@ export default function SearchBar(props) {
 			/>
 			<button className={style.boton} onClick={() => onSearch(character)}>
 				Agregar
-			</button>
+			</button>	
 		</div>
+		<button className={style.random} onClick={()=>handdleButtonClick()}>¿?</button>
+		</xz>
 	);
 }

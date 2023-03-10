@@ -35,8 +35,8 @@ function App() {
 	return (
 		<div className="App">
 				<Nav onSearch={onSearch} />
+				
 			<div className="container">
-			
 				<Routes>
 					<Route
 						path="/"

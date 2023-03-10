@@ -9,6 +9,8 @@ const Nav = (props) => {
 		<div className={style.navbar}>
 				<nav>
 					<SearchBar onSearch={onSearch}/>
+
+					
 					<Link to="/">Home</Link>
 					<Link to= "/about">About</Link>
 				</nav>

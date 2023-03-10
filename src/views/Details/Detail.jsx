@@ -25,19 +25,29 @@ const Detail = () => {
 	}, [detailId]);
 
 	return (
-		<div className={style.tarjeta}>
-			<h1>{character.name}</h1>
-			<ul>
-			<li>Status: {character.status}</li>
-			<li>Species: {character.species}</li>
-			<li>Gender: {character.gender}</li>
-			<li>Origin: {character.origin?.name}</li>
-			</ul>
-			
+		<div>
+			{character.name ? (
+				<xz>
+					<div className={style.presentacion}>
+						<h1>{character.name}</h1>
 
-			<div className={style.foto}>
-				<img src={character.image} alt={character.name}></img>
-			</div>
+						<img
+							src={character.image}
+							alt={character.name}
+							className={style.foto}
+						></img>
+					</div>
+
+					<div className={style.info}>
+						<p>Status: {character.status}</p>
+						<p>Species: {character.species}</p>
+						<p>Gender: {character.gender}</p>
+						<p>Origin: {character.origin?.name}</p>
+					</div>
+				</xz>
+			) : (
+				<h3>Loading...</h3>
+			)}
 		</div>
 	);
 };

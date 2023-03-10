@@ -1,4 +1,5 @@
 import "./App.css";
+import Login from "./views/Login/Login";
 import Cards from "./views/Home/Cards/Cards";
 import About from "./views/About/About";
 import Details from "./views/Details/Detail";
@@ -35,12 +36,15 @@ function App() {
 	return (
 		<div className="App">
 				<Nav onSearch={onSearch} />
-				
 			<div className="container">
+
 				<Routes>
+
+					<Route path="/" element={<Login />}></Route>
+
 					<Route
-						path="/"
-						element={<Cards characters={characters} onClose={onClose}/>}
+						path="/home"
+						element={<Cards characters={characters} onClose={onClose} />}
 					/>
 
 					<Route path="/about" element={<About />} />

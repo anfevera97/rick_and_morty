@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 @media screen and (max-width: 1118px) {
 	.cards{

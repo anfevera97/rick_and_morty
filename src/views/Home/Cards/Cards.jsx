@@ -10,6 +10,7 @@ export default function Cards(props) {
 		<div className={style.cards}>
 			{characters.map(({ id, name, image, species, gender, status }) => (
 				<Card
+					key={id}
 					detailId={id}
 					name={name}
 					image={image}

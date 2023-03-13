@@ -14,14 +14,26 @@
     border-radius: 2rem;
 }
 
-.input{
+.inputError{
     width: 90%;
     align-self: center;
     height: 40px;
     border-radius: 1rem;
     text-align: center;
     font-size: x-large;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    border: 2px solid red;
+}
+
+.inputSuccess{
+    width: 90%;
+    align-self: center;
+    height: 40px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+    border: 2px solid rgb(5, 8, 199);
 }
 
 .boton{
@@ -40,3 +52,16 @@
 .boton:hover{
     background-color: rgba(41, 38, 38, 0.664);
 }
+
+.error{
+    font-size: 22pt;
+    -webkit-text-stroke: 1pt rgb(37, 37, 36);
+    color:rgb(255, 0, 0)
+}
+
+.succes{
+    font-size: 22pt;
+    -webkit-text-stroke: 1pt rgb(37, 37, 36);
+    color:rgb(0, 255, 81)
+}
+

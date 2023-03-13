@@ -4,8 +4,9 @@ import Cards from "./views/Home/Cards/Cards";
 import About from "./views/About/About";
 import Details from "./views/Details/Detail";
 import Nav from "./components/Nav/Nav";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function App() {
 	const [characters, setCharacters] = useState([]);
@@ -33,14 +34,29 @@ function App() {
 		setCharacters(characters.filter((character) => character.id !== id));
 	};
 
+	const navigate = useNavigate();
+	const [access, setAccess] = useState(false);
+	const username = "anfevera97@gmail.com";
+	const password = "Prueba1";
+
+	function login(userData) {
+		if (userData.password === password && userData.username === username) {
+			setAccess(true);
+			navigate("/home");
+		}
+	}
+
+	useEffect(() => {
+		!access && navigate('/');
+	}, [access]);
+	
+
 	return (
 		<div className="App">
-				<Nav onSearch={onSearch} />
+			<Nav onSearch={onSearch} />
 			<div className="container">
-
 				<Routes>
-
-					<Route path="/" element={<Login />}></Route>
+					<Route path="/" element={<Login onSubmit={login}/>} />
 
 					<Route
 						path="/home"
